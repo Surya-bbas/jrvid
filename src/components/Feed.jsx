@@ -35,11 +35,12 @@ const Feed = () => {
               setselectedCategory={setselectedCategory}
               />
 
-            <Typography
+            <Typography 
                variant="body2"
                className="copyright"
                sx={{
                   color: "#fff",
+                  display:{xs:'none',md:'block'}
                }}
             >
                Copyright @Webjr 2022
@@ -52,7 +53,7 @@ const Feed = () => {
                mb={2}               
                sx={{ color: "#fff" , fontWeight:'bold'}}
             >
-               {selectedCategory} <span style={{ color: "#f31503" }}>Vedio</span>
+               {selectedCategory} <span style={{ color: "#f31503" }}>Video</span>
             </Typography>
 
             <Videos videos = {videos} />

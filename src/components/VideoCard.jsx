@@ -15,14 +15,14 @@ const VideoCard = ({video:{id:{videoId},snippet}}) => {
   console.log(videoId,snippet);
 
   return (
-    <Card onClick={handleClick()} sx={{width:{ xs:'100%',sm:'358px', md:'320px' } , boxShadow:'none' , borderRadius:'0' }} >
+    <Card onClick={handleClick()} sx={{width:{ xs:'100%', md:'320px' } , boxShadow:'none' , borderRadius:'0' }} >
 
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
 
         <CardMedia 
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{width:{xs:'100%',sm:'356px',md:'320px'},height:180}}
+          sx={{width:{xs:'100%',md:'320px'},height:180}}
         />
 
       </Link>

@@ -68,6 +68,9 @@ a {
   .category-btn{
     margin: 10px;
   }
+  .logo-title{
+    display: none;
+  }
 }
 
 @media screen and (max-width:800px){
@@ -88,3 +91,4 @@ a {
     width:200px;
   }
 }
+
